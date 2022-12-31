@@ -1,0 +1,63 @@
+/* From google fonts directly */
+@import url('https://fonts.googleapis.com/css?family=Mulidisplay=swap'); 
+
+/* Targets everything */
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center; /*+*/
+    justify-content: center; /*->*/
+    height: 100vh; /*vh means take up the intire height of the browser*/
+    overflow: hidden; /*to hid scroll bars that are set by default*/
+    margin: 0;
+}
+.container{
+    display: flex;
+    width: 90vw;
+}
+.panel{
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat; /*Don't repeat images*/
+    height: 80vh;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    flex: 0.5; /*How big we want the display to be*/
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.panel h3{
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px; 
+    margin: 0; 
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 5; 
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s; /*having seconds in both directions makes it smoother*/
+}
+
+/* Any style here will only take effect if the statement is true */
+@media(max-width: 480px) {
+    .container{
+        width: 100vw;
+    }
+    /* The following below is a psuedo selector of the panels */
+    .panel:nth-of-type(4), 
+    .panel:nth-of-type(5) {
+        display:none;
+    }
+}
