@@ -1,0 +1,17 @@
+/* From google fonts directly */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); 
+
+/* Targets everything */
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /*vh means take up the intire height of the browser*/
+    overflow: hidden; /*to hid scroll bars that are set by default*/
+    margin: 0;
+}
