@@ -15,3 +15,7 @@ body{
     overflow: hidden; /*to hid scroll bars that are set by default*/
     margin: 0;
 }
+
+img {
+    width: 100vh; 
+}
