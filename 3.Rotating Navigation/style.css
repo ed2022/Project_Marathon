@@ -4,6 +4,7 @@
 /* Targets everything */
 *{
     box-sizing: border-box;
+    background-color: ;
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -14,7 +15,11 @@ body{
     height: 100vh; /*vh means take up the intire height of the browser*/
     overflow: hidden; /*to hid scroll bars that are set by default*/
     margin: 0;
+    text-transform: capitalize;
+
 }
+
+
 
 img {
     width: 100vh; 
